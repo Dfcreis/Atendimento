@@ -132,7 +132,7 @@ button {
 #resultado {
   display: block;
   margin: 0 auto;
-  width: 45ch;
+  width: 500px; /* antes era 45ch — agora mais largo */
   height: 420px;
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -148,6 +148,7 @@ button {
   text-align: left;
   color: #111;
 }
+
 
 #resultado::-webkit-scrollbar { width: 8px; }
 #resultado::-webkit-scrollbar-thumb {

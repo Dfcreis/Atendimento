@@ -1,11 +1,11 @@
-function quebrarEm33(texto) {
+function quebrarEm56(texto) {
   texto = texto.replace(/\r?\n/g, " ");
   let resultado = "";
   let contador = 0;
   for (let i = 0; i < texto.length; i++) {
     resultado += texto[i];
     contador++;
-    if (contador === 33) {
+    if (contador === 56) {
       resultado += "\n";
       contador = 0;
     }
@@ -58,7 +58,7 @@ document.getElementById("gerar").onclick = function() {
   const waive = waiveSelect.value;
   const tipo = tipoWaive.value;
   const assinatura = document.getElementById("assinatura").value.trim();
-  const resumoFormatado = quebrarEm33(resumo);
+  const resumoFormatado = quebrarEm56(resumo);
   const waiverText = waiverMap[tipo] ? waiverMap[tipo] : "";
 
   // Monta o texto do resultado
