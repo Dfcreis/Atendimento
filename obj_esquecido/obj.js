@@ -10,13 +10,13 @@ document.getElementById("form-objeto").addEventListener("submit", function(e){
   const descricao = this.descricao.value;
 
   const resposta = `
-    <h3>Objeto Registrado!</h3>
-    <p><strong>Cliente:</strong> ${nome}</p>
-    <p><strong>Trecho:</strong> ${trecho}</p>
-    <p><strong>Dia:</strong> ${dia}</p>
-    <p><strong>Voo:</strong> ${numero}</p>
-    <p><strong>Assento:</strong> ${assento}</p>
-    <p><strong>Descrição:</strong> ${descricao}</p>
+    <h3>Objeto Esquecido!</h3>
+    <p><strong>Cliente- </strong> ${nome}</p>
+    <p><strong>Trecho- </strong> ${trecho}</p>
+    <p><strong>Dia- </strong> ${dia}</p>
+    <p><strong>Voo- </strong> ${numero}</p>
+    <p><strong>Assento- </strong> ${assento}</p>
+    <p><strong>Descrição- </strong> ${descricao}</p>
   `;
 
   document.getElementById("resposta").innerHTML = resposta;
