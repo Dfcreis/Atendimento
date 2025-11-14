@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reembolso</title>
+  <link rel="stylesheet" href="reembolso.css">
+  <script src="reembolso.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Painel de Atendimento</h1>
+  
+  <nav>
+    <a href="../protocolo/protocolo.html"><button>Atendimento</button></a>
+  </nav>
+</header>
+
+<div class="main-container">
+
+  <div class="container">
+    <h2>Solicitação de Reembolso</h2>
+
+    <form id="form-reembolso">
+
+      <label>Nome do Cliente</label>
+      <input type="text" name="nome" required>
+
+      <label>Data de Nascimento</label>
+      <input type="date" name="nascimento" required>
+
+      <label>Banco</label>
+      <input type="text" name="banco" required>
+
+      <label>Agência</label>
+      <input type="text" name="agencia" required>
+
+      <label>Conta</label>
+      <input type="text" name="conta" required>
+
+      <label>Tipo de Conta</label>
+      <select name="tipoConta" required>
+        <option value="">Selecione</option>
+        <option value="Corrente">Corrente</option>
+        <option value="Poupança">Poupança</option>
+      </select>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Número de Telefone</label>
+      <input type="text" name="telefone" required>
+
+      <label>CEP</label>
+      <input type="text" name="cep" required>
+
+      <label>Endereço</label>
+      <input type="text" name="endereco" required>
+
+      <label>Assinatura</label>
+      <input type="text" name="assinatura" required>
+
+      <button type="submit">Registrar Solicitação</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Resultado</h2>
+    <div id="resposta">Nenhum registro ainda.</div>
+    <button id="btn-copiar">Copiar</button>
+  </div>
+
+</div>
+
+</body>
+</html>

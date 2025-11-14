@@ -1,0 +1,159 @@
+/* Corrige todo o cálculo de tamanho */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0b0f14;
+  --panel: rgba(255,255,255,0.07);
+  --accent: #ff8a33;
+  --accent-2: #ff5a00;
+  --text: #ffffff;
+  --muted: #9aa4b2;
+  --radius: 14px;
+  --shadow: 0 10px 40px rgba(0,0,0,0.4);
+  --glass-border: 1px solid rgba(255,255,255,0.15);
+  --glass-bg: rgba(255,255,255,0.08);
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  padding: 25px;
+  background: rgba(10, 15, 20, 0.7);
+  backdrop-filter: blur(20px);
+  border-bottom: var(--glass-border);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* BOTÃO ANIMADO */
+nav button {
+  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(255,150,60,0.5);
+}
+
+nav button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 18px rgba(255,150,60,0.8);
+  opacity: 0.9;
+}
+
+/* LAYOUT */
+.main-container {
+  display: flex;
+  gap: 25px;
+  padding: 25px;
+}
+
+/* CARDS */
+.container {
+  flex: 1;
+  max-width: 50%;
+  background: var(--glass-bg);
+  border: var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 25px;
+  backdrop-filter: blur(20px);
+}
+
+/* TITLES */
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* LABEL */
+label {
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* INPUTS */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 14px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: var(--radius);
+  color: white;
+  font-size: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  background: rgba(255,255,255,0.18);
+}
+
+/* SELECT OPTION */
+select option {
+  background: #0f1720;
+  color: white;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* RESULTADO */
+#resposta {
+  background: rgba(255,255,255,0.12);
+  border: var(--glass-border);
+  padding: 18px;
+  border-radius: var(--radius);
+  white-space: pre-line;
+  font-size: 15px;
+  box-shadow: var(--shadow);
+}
+
+#btn-copiar {
+  margin-top: 18px;
+}
